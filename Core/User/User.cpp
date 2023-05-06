@@ -1,4 +1,4 @@
-#include "user.h"
+#include "User.h"
 
 void User::setName(const string& n)
 {

@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,12 +130,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Core\User\User.cpp" />
+    <ClCompile Include="Core\User\UserProvider\UserProvider.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Ui\Screen\ClientScreen\ClientScreen.cpp" />
+    <ClCompile Include="Ui\Screen\Screen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\User\User.h" />
-    <ClInclude Include="Library.h" />
+    <ClInclude Include="Core\User\UserProvider\UserProvider.h" />
+    <ClInclude Include="Library\Library.h" />
+    <ClInclude Include="Ui\Screen\ClientScreen\ClientScreen.h" />
+    <ClInclude Include="Ui\Screen\Screen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\UserData.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

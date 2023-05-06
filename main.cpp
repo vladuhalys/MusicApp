@@ -1,7 +1,9 @@
 #include "Library/Library.h"
+#include "Ui/Screen/Screen.h"
 
 int main()
 {
-	cout << "Hello World!" << endl;
+	auto *screen = new Screen();
+	screen->Menu();
 	return 0;
 }
