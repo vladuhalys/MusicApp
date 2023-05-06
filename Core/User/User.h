@@ -1,4 +1,4 @@
-
+#pragma once
 #include "../../Library/Library.h"
 
 struct User
@@ -23,3 +23,6 @@ private:
 	string name;
 	string password;
 };
+
+extern User *current_user;
+
