@@ -12,11 +12,21 @@
     <ClCompile Include="main.cpp">
       <Filter>application</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Core\User\User.cpp" />
+    <ClCompile Include="Core\User\UserProvider\UserProvider.cpp" />
+    <ClCompile Include="Ui\Screen\ClientScreen\ClientScreen.cpp" />
+    <ClCompile Include="Ui\Screen\Screen.cpp" />
+    <ClCompile Include="Core\Music\Music.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Library.h">
-      <Filter>library</Filter>
-    </ClInclude>
+    <ClInclude Include="Core\User\User.h" />
+    <ClInclude Include="Core\User\UserProvider\UserProvider.h" />
+    <ClInclude Include="Library\Library.h" />
+    <ClInclude Include="Ui\Screen\ClientScreen\ClientScreen.h" />
+    <ClInclude Include="Ui\Screen\Screen.h" />
+    <ClInclude Include="Core\Music\Music.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\UserData.csv" />
   </ItemGroup>
 </Project>
