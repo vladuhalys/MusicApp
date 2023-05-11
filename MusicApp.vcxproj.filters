@@ -1,22 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="application">
+    <Filter Include="Core">
+      <UniqueIdentifier>{4b7c1c61-374d-4b72-bb88-40441ad1837e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{bd5e1cc7-3ad9-4c16-98f9-7e56a22b2d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
       <UniqueIdentifier>{8ce7bb7f-306a-4c9c-ae67-8ae17abc3a4f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="library">
-      <UniqueIdentifier>{bd5e1cc7-3ad9-4c16-98f9-7e56a22b2d9a}</UniqueIdentifier>
+    <Filter Include="Data">
+      <UniqueIdentifier>{fc512bde-91b7-4aef-bb4d-e1c9469df9fc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>application</Filter>
+      <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Core\User\User.cpp" />
+    <ClCompile Include="Core\User\UserProvider\UserProvider.cpp" />
+    <ClCompile Include="Ui\Screen\ClientScreen\ClientScreen.cpp" />
+    <ClCompile Include="Ui\Screen\Screen.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Library.h">
-      <Filter>library</Filter>
-    </ClInclude>
+    <ClInclude Include="Core\User\User.h" />
+    <ClInclude Include="Core\User\UserProvider\UserProvider.h" />
+    <ClInclude Include="Library\Library.h" />
+    <ClInclude Include="Ui\Screen\ClientScreen\ClientScreen.h" />
+    <ClInclude Include="Ui\Screen\Screen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\UserData.csv" />
   </ItemGroup>
 </Project>
