@@ -9,5 +9,6 @@
     <ClCompile Include="main.cpp">
       <Filter>application</Filter>
     </ClCompile>
+    <ClCompile Include="music.cpp" />
   </ItemGroup>
 </Project>
