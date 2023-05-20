@@ -13,26 +13,68 @@
     <Filter Include="Data">
       <UniqueIdentifier>{fc512bde-91b7-4aef-bb4d-e1c9469df9fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ui">
+      <UniqueIdentifier>{37abfced-9ad2-4204-9040-5e4e022fddce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui\Screen">
+      <UniqueIdentifier>{09f7226a-1fa7-4b89-9c32-e4bc7bda9249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui\Screen\ClientScreen">
+      <UniqueIdentifier>{17d9c49b-bc14-4937-a176-7055eaa8c4b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\User">
+      <UniqueIdentifier>{7fc8a299-803c-4c47-85aa-c2ae735dc5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\User\UserProvider">
+      <UniqueIdentifier>{f2df80aa-d355-4f93-8526-b36e7f3a54b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Music">
+      <UniqueIdentifier>{8aab1cd6-0da0-4423-b45c-0f4349cac79f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="Core\User\User.cpp" />
-    <ClCompile Include="Core\User\UserProvider\UserProvider.cpp" />
-    <ClCompile Include="Ui\Screen\ClientScreen\ClientScreen.cpp" />
-    <ClCompile Include="Ui\Screen\Screen.cpp" />
-    <ClCompile Include="Core\Music\Music.cpp" />
+    <ClCompile Include="Ui\Screen\Screen.cpp">
+      <Filter>Ui\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Screen\ClientScreen\ClientScreen.cpp">
+      <Filter>Ui\Screen\ClientScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Music\Music.cpp">
+      <Filter>Core\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\User\UserProvider\UserProvider.cpp">
+      <Filter>Core\User\UserProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\User\User.cpp">
+      <Filter>Core\User</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\User\User.h" />
-    <ClInclude Include="Core\User\UserProvider\UserProvider.h" />
-    <ClInclude Include="Library\Library.h" />
-    <ClInclude Include="Ui\Screen\ClientScreen\ClientScreen.h" />
-    <ClInclude Include="Ui\Screen\Screen.h" />
-    <ClInclude Include="Core\Music\Music.h" />
+    <ClInclude Include="Ui\Screen\Screen.h">
+      <Filter>Ui\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Screen\ClientScreen\ClientScreen.h">
+      <Filter>Ui\Screen\ClientScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Library.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Music\Music.h">
+      <Filter>Core\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\User\UserProvider\UserProvider.h">
+      <Filter>Core\User\UserProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\User\User.h">
+      <Filter>Core\User</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\UserData.csv" />
+    <None Include="Data\UserData.csv">
+      <Filter>Data</Filter>
+    </None>
   </ItemGroup>
 </Project>

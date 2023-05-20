@@ -1,5 +1,9 @@
 #include "Music.h"
 
+void Music::setId(uint64_t i)
+{
+	id = i;
+}
 void Music::setName(const string& n)
 {
 	name = n;
@@ -13,6 +17,10 @@ void Music::setLength(int l)
 	length = l;
 }
 
+uint64_t Music::getId() const
+{
+	return id;
+}
 string Music::getName() const
 {
 	return name;
@@ -28,27 +36,32 @@ int Music::getLength() const
 
 Music::Music()
 {
+	setId(0);
 	setName("NULL");
 	setAuthor("NULL");
 	setLength(0);
 }
-
-Music::Music(const string& n) : Music()
+Music::Music(uint64_t i) : Music()
+{
+	setId(i);
+}
+Music::Music(uint64_t i, const string &n) : Music(i)
 {
 	setName(n);
 }
-Music::Music(const string& n, const string& a) : Music(n)
+Music::Music(uint64_t i, const string &n, const string &a) : Music(i,n)
 {
 	setAuthor(a);
 }
-Music::Music(const string& n, const string& a, int l) : Music(n, a)
+Music::Music(uint64_t i, const string &n, const string &a, int l) : Music(i,n,a)
 {
-	setAuthor(a);
+	setLength(l);
 }
 
 Music::~Music()
 {
-	name = "NULL";
-	author = "NULL";
-	length = 0;
+	setId(0);
+	name.clear();
+	author.clear();
+	setLength(0);
 }

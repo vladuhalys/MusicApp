@@ -43,10 +43,22 @@ int UserProvider::readUserData(vector<User> &userdata, const string &filename) c
 		while (getline(file, line))
 		{
 			std::stringstream ss(line);
-			string name, password;
+
+			string name;
+			string password;
+			string favorites;
+
 			getline(ss, name, ',');
 			getline(ss, password, ',');
-			userdata.emplace_back(name, password);
+			getline(ss, favorites, ',');
+
+			std::istringstream fs(favorites);
+			vector<uint64_t> fav{
+				std::istream_iterator<int>(fs),
+				std::istream_iterator<int>()
+			};
+
+			userdata.emplace_back(name, password, std::move(fav));
 		}
 		file.close();
 		return 0;
